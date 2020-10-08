@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <canvas></canvas>
+        <div class="colors">
+            <span>
+                <p> Red </p>
+                <input type="range" name="" id="red" min="0" max="255" step="5">
+            </span>
+            <span>
+                <p> Green </p>
+                <input type="range" id="green" min="0" max="255" step="5">
+            </span>
+            <span>
+                <p> Blue </p>
+                <input type="range" id="blue" min="0" max="255" step="5">
+            </span>
+        </div>
+        <div class="utility">
+            <div class="controls">
+                <audio></audio>
+                <input type="file"  id="File">
+                <br>
+                <button>Play</button>
+                <br>
+                <div class="gaincontrol">
+                <p> Gain <input type="range"  id="Gain"> </p>
+                </div>
+                <br>
+                <div class="pancontrol">
+                <p> Pan <input type="range" step="1" id="Pan"> </p>
+                </div>
+                <input type="range"  id="Seek">
+            </div>
+            <div class="equalizer">
+               <span>
+                   <p> Bass </p>
+                   <input type="range" name="" id="lowshelf" max="12" min="-12" step="1">
+               </span> 
+               <span>
+                   <p> Mid </p>
+                   <input type="range" name="" id="peaking" max="12" min="-12" step="1">
+                   <p> Mid Q </p>
+                   <input type="range" name="" id="peakingQ" max="12" min="-12" step="1">
+               </span>
+               <span>
+                   <p> Treble </p>
+                   <input type="range" name="" id="highshelf" max="12" min="-12" step="1">
+               </span>
+            </div>   
+        </div>    
+    </div>
+    <script src="./script.js"></script>
+</body>
